@@ -1,1 +1,5 @@
-솔미테크 외주로 진행된cocos2d-x로 만든 Android 게임입니다.
+# Dropking
+Android Cocos2d-x game
+use SCH-M1 acceleration sensor by bluetooth
+
+youtube : https://www.youtube.com/watch?v=vFAxnLtmaqI
