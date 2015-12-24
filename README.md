@@ -13,11 +13,11 @@
 ![Dropking](http://cfile26.uf.tistory.com/image/2216EE50567BF479316266)
  
  
- ## Links to the Game Video Youtube
+ # Links to the Game Video Youtube
  
  * https://www.youtube.com/watch?v=vFAxnLtmaqI
  
- ## Frameworks and tools
+ # Frameworks and tools
  
  * Cocos2d-x http://www.cocos2d-x.org/
  * Eclipse IDE http://www.eclipse.org/
