@@ -1,4 +1,6 @@
- # Dropking
+ ![div](http://cfile9.uf.tistory.com/image/234BCF4C567BF6C820C203)
+ 
+               # Dropking
  
    * Dropking is Android health game user should use SHC-M1 made by solmitech corp.
    * User would shake device to drop gift
