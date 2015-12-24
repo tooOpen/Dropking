@@ -17,7 +17,7 @@
  
  * https://www.youtube.com/watch?v=vFAxnLtmaqI
  
- # Frameworks and tools
+  Frameworks and tools
  
  * Cocos2d-x http://www.cocos2d-x.org/
  * Eclipse IDE http://www.eclipse.org/
