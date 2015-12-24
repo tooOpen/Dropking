@@ -22,3 +22,6 @@
   * Eclipse IDE http://www.eclipse.org/
   * Solmitech http://www.solmitech.com/ko/
   * Android Market https://play.google.com/store/apps/details?id=com.solmi.refitgames.dropking
+  * 
+  # Contact & More Information
+   * http://bsh0608.tistory.com/entry/%E3%85%81
