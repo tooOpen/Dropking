@@ -9,8 +9,8 @@
  * Provide local Database SQLite
  * Use Cocos2d-x
  
-[![Dropking](http://cfile22.uf.tistory.com/image/2117CA50567BF46F2F7081)]
-[![Dropking](http://cfile26.uf.tistory.com/image/2216EE50567BF479316266)]
+![Dropking](http://cfile22.uf.tistory.com/image/2117CA50567BF46F2F7081)
+![Dropking](http://cfile26.uf.tistory.com/image/2216EE50567BF479316266)
  
  
  ## Links to the Game Video Youtube
