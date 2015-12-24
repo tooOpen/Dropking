@@ -1,0 +1,53 @@
+<resources>
+	<color name="black_overlay">#66000000</color>
+	<color name="transparent">#00FFFFFF</color>
+	<color name="gold">#FFffd700</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="black">#FF000000</color>
+	<color name="lightblue">#FF00FFFF</color>
+	<color name="blue">#FF0000FF</color>
+	<color name="blue_transparent">#400000FF</color>
+	<color name="red">#FFFF0000</color>
+	<color name="green">#FF00AA00</color>
+	<color name="lawngreen">#FF7CFC00</color>
+	<color name="gray">#FFAAAAAA</color>
+	<color name="darkgray">#FF444444</color>
+	<color name="my_gray">#FF333333</color>
+	<color name="lightgray">#E658585A</color>
+	<color name="gray86">#FFDBDBDB</color>	
+	<color name="opaque_shadow">#70000000</color>
+	<color name="stat_label_background">#FFF0F0F0</color>
+	<color name="stat_label_text">#FF0F0F0F</color>
+	<color name="magenta">#FFFF00FF</color>
+	<color name="orange">#FFFFA500</color>
+	<color name="mint">#ff93D2C1</color>
+	<!-- BMI COLOR -->
+	<color name="bmi_1">#FF6cccdb</color>
+	<color name="bmi_2">#FF68bd45</color>
+	<color name="bmi_3">#FFf8a11b</color>
+	<color name="bmi_4">#FFf38385</color>
+	<color name="bmi_5">#FFF26F51</color>
+	<!-- BIO Rhythm Color -->
+	<color name="biorhythm_phy">#FFee4737</color>
+	<color name="biorhythm_emo">#FFc082c0</color>
+	<color name="biorhythm_int">#FF419547</color>
+	<color name="biorhythm_per">#FFfeda00</color>
+	<!-- skin -->
+	<color name="skin_1">#FF00AFDB</color>
+	<color name="skin_2">#FF93D2C1</color>
+	<!-- Chart Color -->
+	<color name="chart_bk">#FFE6E6E6</color>
+	<color name="chart_bio">#FFD63661</color>
+	<color name="chart_hr">#FF93D2C1</color>
+	<color name="chart_stress">#FFFFA500</color>
+	<color name="chart_bmi">#FF5DA9DD</color>
+	<!-- Stress Color -->
+	<color name="stressLv1">#FF63C0EC</color>
+	<color name="stressLv2">#FF93D2C1</color>
+	<color name="stressLv3">#ffECA3B7</color>
+	<color name="stressLv4">#ffF8931F</color>
+	<color name="stressLv5">#ffF11234</color>
+	
+	
+	
+</resources>

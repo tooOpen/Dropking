@@ -1,0 +1,602 @@
+com.dropking.game.DropKing -> com.dropking.game.DropKing:
+    java.lang.Object activity -> d
+    boolean connected -> a
+    android.os.Handler b_handler -> b
+    java.lang.String PlayerName -> e
+    edu.kmu.solmi.SolmiBroker solmi -> f
+    edu.kmu.sensor.SensorBroker$sensorcallback cocoCallback -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void getValue(edu.kmu.solmi.SolmiBroker$SolmiEvent) -> getValue
+    void onDestroy() -> onDestroy
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView onCreateView() -> a
+    void access$0(com.dropking.game.DropKing,edu.kmu.solmi.SolmiBroker$SolmiEvent) -> a
+    edu.kmu.solmi.SolmiBroker access$1() -> b
+com.dropking.game.DropKing$1 -> com.dropking.game.a:
+    com.dropking.game.DropKing this$0 -> a
+    void rcvedData(edu.kmu.sensor.SensorBroker$m_SensorEvent) -> a
+    void successConnected() -> a
+com.dropking.game.DropKing$2 -> com.dropking.game.b:
+    com.dropking.game.DropKing this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.solmi.bluetoothservice.BluetoothService -> com.solmi.bluetoothservice.BluetoothService:
+    java.util.UUID MY_UUID -> g
+    boolean DEBUG -> h
+    java.lang.String TAG -> i
+    boolean g_ServiceState -> a
+    java.lang.String g_DevName -> b
+    int g_failCnt -> c
+    boolean g_btRunning -> d
+    android.os.Handler g_localHandler -> e
+    int g_state -> j
+    android.bluetooth.BluetoothAdapter g_BTadapter -> k
+    com.solmi.bluetoothservice.BluetoothService$ConnectThread g_connectThread -> l
+    com.solmi.bluetoothservice.BluetoothService$ConnectedThread g_connectedThread -> m
+    boolean gClear -> f
+    com.solmi.bluetoothservice.BluetoothService$BTCallback mCallback -> n
+    com.solmi.bluetoothservice.BluetoothService$BluetoothServiceBinder g_Binder -> o
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void BluetoothInit() -> a
+    void BluetoothConnect(java.lang.String) -> a
+    void setState(int) -> c
+    int getState() -> b
+    void connect(android.bluetooth.BluetoothDevice) -> a
+    void connected(android.bluetooth.BluetoothSocket,android.bluetooth.BluetoothDevice) -> a
+    void stop() -> c
+    void write(byte[]) -> a
+    void connetionFailed() -> k
+    void connectionLost() -> l
+    void BTconnect(java.lang.String) -> b
+    void registerCallback(com.solmi.bluetoothservice.BluetoothService$BTCallback) -> a
+    void startHrStressMode() -> d
+    void startHrECGMode() -> e
+    void startACCMode() -> f
+    void startECGACCMode() -> g
+    void getDeviceInfo() -> h
+    void stopDeviceMode() -> i
+    void setAccelerometer(int) -> a
+    void setRunningTime(int) -> b
+    java.util.UUID access$0() -> j
+    boolean access$1(com.solmi.bluetoothservice.BluetoothService) -> a
+    android.bluetooth.BluetoothAdapter access$2(com.solmi.bluetoothservice.BluetoothService) -> b
+    void access$3(com.solmi.bluetoothservice.BluetoothService) -> c
+    void access$4(com.solmi.bluetoothservice.BluetoothService,com.solmi.bluetoothservice.BluetoothService$ConnectThread) -> a
+    com.solmi.bluetoothservice.BluetoothService$BTCallback access$5(com.solmi.bluetoothservice.BluetoothService) -> d
+    void access$6(com.solmi.bluetoothservice.BluetoothService) -> e
+com.solmi.bluetoothservice.BluetoothService$BTCallback -> com.solmi.bluetoothservice.a:
+    void rcvedData(com.solmi.protocol.rev3.SHC_M1$SHC_Data) -> a
+    void BTConnected() -> a
+    void ConnectionFail() -> b
+com.solmi.bluetoothservice.BluetoothService$BluetoothServiceBinder -> com.solmi.bluetoothservice.b:
+    com.solmi.bluetoothservice.BluetoothService this$0 -> a
+    com.solmi.bluetoothservice.BluetoothService getService() -> a
+com.solmi.bluetoothservice.BluetoothService$ConnectThread -> com.solmi.bluetoothservice.c:
+    android.bluetooth.BluetoothSocket mmSocket -> b
+    android.bluetooth.BluetoothDevice mmDevice -> c
+    com.solmi.bluetoothservice.BluetoothService this$0 -> a
+    void run() -> run
+    void cancel() -> a
+com.solmi.bluetoothservice.BluetoothService$ConnectedThread -> com.solmi.bluetoothservice.d:
+    android.bluetooth.BluetoothSocket mmSocket -> b
+    java.io.InputStream mmInStream -> c
+    java.io.OutputStream mmOutStream -> d
+    com.solmi.bluetoothservice.BluetoothService this$0 -> a
+    void run() -> run
+    void write(byte[]) -> a
+    void cancel() -> a
+com.solmi.protocol.rev3.DataAnalysis -> com.solmi.a.a.a:
+    com.solmi.protocol.rev3.SHC_M1$SHC_Data g_SHCData -> a
+    com.solmi.protocol.rev3.HealthContents g_hc -> b
+    byte[] tempPkt -> c
+    int tempPktPos -> d
+    boolean pktFlag -> e
+    boolean pktContinue -> f
+    int pktCnt -> g
+    boolean fflag -> h
+    byte[] rtcBuffer -> i
+    int getStepNumber(byte,byte) -> a
+    int getDrink(byte,byte) -> b
+    int getSmoke(byte,byte) -> c
+    com.solmi.protocol.rev3.DataAnalysis$Element getRawData(byte,byte) -> d
+    int getLow10bitValue(byte,byte) -> e
+    boolean checkPacket(byte[],int) -> a
+    com.solmi.protocol.rev3.SHC_M1$SHC_Data getSHCData() -> a
+    com.solmi.protocol.rev3.SHC_M1$SHC_Data processHeaderPacket(byte[],int,com.solmi.protocol.rev3.SHC_M1$SHC_Data) -> a
+    com.solmi.protocol.rev3.SHC_M1$SHC_Data processRawDataPacket(byte[],int,com.solmi.protocol.rev3.SHC_M1$SHC_Data) -> b
+    com.solmi.protocol.rev3.SHC_M1$SHC_Data parsingStepAll(byte[],int,com.solmi.protocol.rev3.SHC_M1$SHC_Data) -> c
+com.solmi.protocol.rev3.DataAnalysis$Element -> com.solmi.a.a.b:
+    int value -> a
+    byte channel -> b
+com.solmi.protocol.rev3.HealthContents -> com.solmi.a.a.c:
+    boolean DEBUG -> c
+    int MAX_HEARTRATE -> d
+    float MAX_STRESS -> e
+    int[] pRV -> f
+    int[] pHRV -> g
+    int[] pSHRV -> h
+    int offCount -> i
+    int fatCount -> j
+    int nBeat -> k
+    int iFatCount -> l
+    boolean leadOffFlag -> m
+    float[] pSI -> n
+    int nSI -> o
+    com.solmi.protocol.rev3.HealthContents$hCont hcont -> a
+    com.solmi.protocol.rev3.HealthContents$User user -> b
+    int[] wBuffer -> p
+    void init_HR_STR() -> a
+    int rtc_hr_stress_calc(byte,byte) -> a
+    void calc_hr_stress() -> b
+    float stress_average(float) -> a
+    float sort_and_average(int[],int,int,int) -> a
+    float stress_calculate(int[],int) -> a
+com.solmi.protocol.rev3.HealthContents$User -> com.solmi.a.a.d:
+    int Age -> a
+    int Weight -> b
+    int Height -> c
+    int Gender -> d
+    com.solmi.protocol.rev3.HealthContents this$0 -> e
+com.solmi.protocol.rev3.HealthContents$hCont -> com.solmi.a.a.e:
+    int DevState -> a
+    int HeartRate -> b
+    float Stress -> c
+    float FatMass -> d
+    com.solmi.protocol.rev3.HealthContents this$0 -> e
+com.solmi.protocol.rev3.SHC_M1 -> com.solmi.a.a.f:
+    byte[][] ACK_MAPPING -> b
+    int CONTINUOUS_OPERATION -> c
+    com.solmi.protocol.rev3.SHC_M1$HandshakeListener g_HSL -> a
+    byte[] getDeviceInfomation() -> a
+    byte[] setDataAcquisition(byte) -> a
+    byte[] setupDevice(byte,byte) -> a
+    byte[] stopDevice() -> b
+    byte[] setupAccelerometer(byte,byte,byte,byte) -> a
+    byte[] setStepAll() -> c
+com.solmi.protocol.rev3.SHC_M1$AccInformation -> com.solmi.a.a.g:
+    int steps -> a
+    byte threshold -> b
+    byte duration -> c
+com.solmi.protocol.rev3.SHC_M1$DAQHeader -> com.solmi.a.a.h:
+    int DevStatus -> a
+    int ReqSig -> b
+    int Tstp -> c
+    int Hr -> d
+    float Stress -> e
+    float Fat -> f
+    int Step -> g
+    float Distance -> h
+    float Calorie -> i
+    int[] Samples -> j
+    int drink -> k
+    int smoke -> l
+com.solmi.protocol.rev3.SHC_M1$DeviceInformation -> com.solmi.a.a.i:
+    byte DevID -> a
+    byte SamplingRate -> b
+    byte RunTime -> c
+    byte ReqSig -> d
+    byte SetStat -> e
+com.solmi.protocol.rev3.SHC_M1$HandshakeListener -> com.solmi.a.a.j:
+    int lastCommand -> a
+    void regCommand(byte) -> a
+com.solmi.protocol.rev3.SHC_M1$RawData -> com.solmi.a.a.k:
+    int Ecg_0 -> a
+    int Ecg_1 -> b
+    int BodyFat -> c
+    int Acc_X -> d
+    int Acc_Y -> e
+    int Acc_Z -> f
+    int Steps -> g
+    int[] bodySample -> h
+com.solmi.protocol.rev3.SHC_M1$SHC_Data -> com.solmi.a.a.l:
+    int packetType -> a
+    com.solmi.protocol.rev3.SHC_M1$DeviceInformation devInfo -> b
+    com.solmi.protocol.rev3.SHC_M1$UserInformation userInfo -> c
+    com.solmi.protocol.rev3.SHC_M1$DAQHeader daqHeader -> d
+    com.solmi.protocol.rev3.SHC_M1$RawData rawData -> e
+    com.solmi.protocol.rev3.SHC_M1$AccInformation accInfo -> f
+    com.solmi.protocol.rev3.SHC_M1$StepAllData stepAllInfo -> g
+com.solmi.protocol.rev3.SHC_M1$SendPacket -> com.solmi.a.a.m:
+    byte[] sendPkt -> b
+    byte[] settingBuffer -> a
+    void initPkt() -> a
+    void setData(int) -> a
+    byte[] getPacket(int,byte[]) -> a
+com.solmi.protocol.rev3.SHC_M1$StepAllData -> com.solmi.a.a.n:
+    java.util.ArrayList Steps -> a
+    com.solmi.protocol.rev3.SHC_M1$m1_Time StartTime -> b
+    com.solmi.protocol.rev3.SHC_M1$m1_Time CurrentTime -> c
+    int CurrentStep -> d
+    void setStartTime(byte,byte,byte) -> a
+    void setCurrentTime(byte,byte,byte) -> b
+com.solmi.protocol.rev3.SHC_M1$UserInformation -> com.solmi.a.a.o:
+    byte Gender -> a
+    byte Age -> b
+    byte Weight -> c
+    byte Height -> d
+com.solmi.protocol.rev3.SHC_M1$m1_Time -> com.solmi.a.a.p:
+    int year -> a
+    int month -> b
+    int day -> c
+    int hour -> d
+    int min -> e
+    void setTime(byte,byte,byte) -> a
+edu.kmu.sensor.SensorBroker -> a.a.a.a:
+edu.kmu.sensor.SensorBroker$m_SensorEvent -> a.a.a.b:
+    int message -> a
+    int iparam1 -> b
+    int iparam2 -> c
+    int iparam3 -> d
+    int iparam6 -> e
+    float fparam4 -> f
+edu.kmu.sensor.SensorBroker$sensorcallback -> a.a.a.c:
+    void rcvedData(edu.kmu.sensor.SensorBroker$m_SensorEvent) -> a
+    void successConnected() -> a
+edu.kmu.solmi.SolmiBroker -> a.a.b.a:
+    int _dataAcquisitionMode -> d
+    int _gravityRange -> e
+    int _runTime -> f
+    android.content.Context cp -> g
+    edu.kmu.solmi.SolmiBroker$SolmiEvent sevent -> h
+    java.lang.String _g_DevName -> i
+    edu.kmu.sensor.SensorBroker$sensorcallback cocallback -> j
+    boolean isplay -> k
+    boolean isSetted -> l
+    boolean isBinded -> m
+    java.util.Timer btime -> n
+    java.util.Queue gSaveQue -> o
+    com.solmi.bluetoothservice.BluetoothService g_BluetoothService -> a
+    android.content.ServiceConnection g_BluetoothServiceConn -> b
+    int gECG -> p
+    int gAccX -> q
+    int gAccY -> r
+    int gAccZ -> s
+    int HR -> t
+    float stress -> u
+    com.solmi.bluetoothservice.BluetoothService$BTCallback mBTCallback -> c
+    void disconnect() -> a
+    boolean connect(int) -> a
+    void connectsolmi() -> d
+    void checkSetted() -> b
+    void setCallbackfunc(edu.kmu.sensor.SensorBroker$sensorcallback) -> a
+    void bindService() -> c
+    void access$0(edu.kmu.solmi.SolmiBroker,boolean) -> a
+    void access$1(edu.kmu.solmi.SolmiBroker,boolean) -> b
+    int access$2(edu.kmu.solmi.SolmiBroker) -> a
+    void access$3(edu.kmu.solmi.SolmiBroker,float) -> a
+    edu.kmu.solmi.SolmiBroker$SolmiEvent access$4(edu.kmu.solmi.SolmiBroker) -> b
+    float access$5(edu.kmu.solmi.SolmiBroker) -> c
+    void access$6(edu.kmu.solmi.SolmiBroker,int) -> a
+    int access$7(edu.kmu.solmi.SolmiBroker) -> d
+    boolean access$8(edu.kmu.solmi.SolmiBroker) -> e
+    java.util.Queue access$9(edu.kmu.solmi.SolmiBroker) -> f
+    edu.kmu.sensor.SensorBroker$sensorcallback access$10(edu.kmu.solmi.SolmiBroker) -> g
+    void access$11(edu.kmu.solmi.SolmiBroker,int) -> b
+    void access$12(edu.kmu.solmi.SolmiBroker,int) -> c
+    void access$13(edu.kmu.solmi.SolmiBroker,int) -> d
+    void access$14(edu.kmu.solmi.SolmiBroker,int) -> e
+    int access$15(edu.kmu.solmi.SolmiBroker) -> h
+    int access$16(edu.kmu.solmi.SolmiBroker) -> i
+    int access$17(edu.kmu.solmi.SolmiBroker) -> j
+    int access$18(edu.kmu.solmi.SolmiBroker) -> k
+    java.lang.String access$19(edu.kmu.solmi.SolmiBroker) -> l
+    int access$20(edu.kmu.solmi.SolmiBroker) -> m
+    int access$21(edu.kmu.solmi.SolmiBroker) -> n
+    void access$22(edu.kmu.solmi.SolmiBroker,boolean) -> c
+    void access$23(edu.kmu.solmi.SolmiBroker) -> o
+    boolean access$24(edu.kmu.solmi.SolmiBroker) -> p
+    java.util.Timer access$25(edu.kmu.solmi.SolmiBroker) -> q
+    void access$26(edu.kmu.solmi.SolmiBroker,java.util.Timer) -> a
+edu.kmu.solmi.SolmiBroker$1 -> a.a.b.b:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+edu.kmu.solmi.SolmiBroker$2 -> a.a.b.c:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void rcvedData(com.solmi.protocol.rev3.SHC_M1$SHC_Data) -> a
+    void BTConnected() -> a
+    void ConnectionFail() -> b
+edu.kmu.solmi.SolmiBroker$3 -> a.a.b.d:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$4 -> a.a.b.e:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$AcquisitionTask -> a.a.b.f:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$Check -> a.a.b.g:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$ConnectTask -> a.a.b.h:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$DataInfoTask -> a.a.b.i:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$GravityDegreeTask -> a.a.b.j:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$RuntimeTask -> a.a.b.k:
+    edu.kmu.solmi.SolmiBroker this$0 -> a
+    void run() -> run
+edu.kmu.solmi.SolmiBroker$SolmiEvent -> a.a.b.l:
+    edu.kmu.solmi.SolmiBroker this$0 -> g
+org.cocos2dx.lib.Cocos2dxAccelerometer -> org.cocos2dx.lib.Cocos2dxAccelerometer:
+    java.lang.String TAG -> a
+    android.content.Context mContext -> b
+    android.hardware.SensorManager mSensorManager -> c
+    android.hardware.Sensor mAccelerometer -> d
+    int mNaturalOrientation -> e
+    void enable() -> a
+    void disable() -> b
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onSensorChanged(float,float,float,long) -> onSensorChanged
+org.cocos2dx.lib.Cocos2dxActivity -> org.cocos2dx.lib.a:
+    java.lang.String TAG -> a
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView mGLSurfaceView -> b
+    org.cocos2dx.lib.Cocos2dxHandler mHandler -> c
+    android.content.Context sContext -> d
+    android.content.Context getContext() -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void runOnGLThread(java.lang.Runnable) -> a
+    void init() -> d
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView onCreateView() -> a
+    boolean isAndroidEmulator() -> b
+org.cocos2dx.lib.Cocos2dxBitmap -> org.cocos2dx.lib.b:
+    android.content.Context sContext -> a
+    void setContext(android.content.Context) -> a
+org.cocos2dx.lib.Cocos2dxETCLoader -> org.cocos2dx.lib.c:
+    android.content.Context context -> a
+    void setContext(android.content.Context) -> a
+org.cocos2dx.lib.Cocos2dxEditBoxDialog -> org.cocos2dx.lib.d:
+    int kEditBoxInputModeAny -> a
+    int kEditBoxInputModeEmailAddr -> b
+    int kEditBoxInputModeNumeric -> c
+    int kEditBoxInputModePhoneNumber -> d
+    int kEditBoxInputModeUrl -> e
+    int kEditBoxInputModeDecimal -> f
+    int kEditBoxInputModeSingleLine -> g
+    int kEditBoxInputFlagPassword -> h
+    int kEditBoxInputFlagSensitive -> i
+    int kEditBoxInputFlagInitialCapsWord -> j
+    int kEditBoxInputFlagInitialCapsSentence -> k
+    int kEditBoxInputFlagInitialCapsAllCharacters -> l
+    int kKeyboardReturnTypeDefault -> m
+    int kKeyboardReturnTypeDone -> n
+    int kKeyboardReturnTypeSend -> o
+    int kKeyboardReturnTypeSearch -> p
+    int kKeyboardReturnTypeGo -> q
+    android.widget.EditText mInputEditText -> r
+    android.widget.TextView mTextViewTitle -> s
+    java.lang.String mTitle -> t
+    java.lang.String mMessage -> u
+    int mInputMode -> v
+    int mInputFlag -> w
+    int mReturnType -> x
+    int mMaxLength -> y
+    int mInputFlagConstraints -> z
+    int mInputModeContraints -> A
+    boolean mIsMultiline -> B
+    void onCreate(android.os.Bundle) -> onCreate
+    int convertDipsToPixels(float) -> a
+    void openKeyboard() -> a
+    void closeKeyboard() -> b
+    android.widget.EditText access$0(org.cocos2dx.lib.Cocos2dxEditBoxDialog) -> a
+    void access$1(org.cocos2dx.lib.Cocos2dxEditBoxDialog) -> b
+    void access$2(org.cocos2dx.lib.Cocos2dxEditBoxDialog) -> c
+org.cocos2dx.lib.Cocos2dxEditBoxDialog$1 -> org.cocos2dx.lib.e:
+    org.cocos2dx.lib.Cocos2dxEditBoxDialog this$0 -> a
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxEditBoxDialog$2 -> org.cocos2dx.lib.f:
+    org.cocos2dx.lib.Cocos2dxEditBoxDialog this$0 -> a
+    boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent) -> onEditorAction
+org.cocos2dx.lib.Cocos2dxEditText -> org.cocos2dx.lib.g:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView mCocos2dxGLSurfaceView -> a
+    void setCocos2dxGLSurfaceView(org.cocos2dx.lib.Cocos2dxGLSurfaceView) -> setCocos2dxGLSurfaceView
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+org.cocos2dx.lib.Cocos2dxGLSurfaceView -> org.cocos2dx.lib.h:
+    java.lang.String TAG -> a
+    android.os.Handler sHandler -> b
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView mCocos2dxGLSurfaceView -> c
+    org.cocos2dx.lib.Cocos2dxTextInputWraper sCocos2dxTextInputWraper -> d
+    org.cocos2dx.lib.Cocos2dxRenderer mCocos2dxRenderer -> e
+    org.cocos2dx.lib.Cocos2dxEditText mCocos2dxEditText -> f
+    void initView() -> a
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView getInstance() -> getInstance
+    void queueAccelerometer(float,float,float,long) -> a
+    void setCocos2dxRenderer(org.cocos2dx.lib.Cocos2dxRenderer) -> setCocos2dxRenderer
+    java.lang.String getContentText() -> getContentText
+    org.cocos2dx.lib.Cocos2dxEditText getCocos2dxEditText() -> getCocos2dxEditText
+    void setCocos2dxEditText(org.cocos2dx.lib.Cocos2dxEditText) -> setCocos2dxEditText
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void insertText(java.lang.String) -> a
+    void deleteBackward() -> b
+    org.cocos2dx.lib.Cocos2dxEditText access$0(org.cocos2dx.lib.Cocos2dxGLSurfaceView) -> a
+    org.cocos2dx.lib.Cocos2dxTextInputWraper access$1() -> c
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView access$2() -> d
+    org.cocos2dx.lib.Cocos2dxRenderer access$3(org.cocos2dx.lib.Cocos2dxGLSurfaceView) -> b
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$1 -> org.cocos2dx.lib.i:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$10 -> org.cocos2dx.lib.j:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int[] val$ids -> b
+    float[] val$xs -> c
+    float[] val$ys -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$11 -> org.cocos2dx.lib.k:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int val$pKeyCode -> b
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$12 -> org.cocos2dx.lib.l:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    java.lang.String val$pText -> b
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$13 -> org.cocos2dx.lib.m:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$2 -> org.cocos2dx.lib.n:
+    float val$x -> a
+    float val$y -> b
+    float val$z -> c
+    long val$timestamp -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$3 -> org.cocos2dx.lib.o:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$4 -> org.cocos2dx.lib.p:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$5 -> org.cocos2dx.lib.q:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int val$idPointerDown -> b
+    float val$xPointerDown -> c
+    float val$yPointerDown -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$6 -> org.cocos2dx.lib.r:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int val$idDown -> b
+    float val$xDown -> c
+    float val$yDown -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$7 -> org.cocos2dx.lib.s:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int[] val$ids -> b
+    float[] val$xs -> c
+    float[] val$ys -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$8 -> org.cocos2dx.lib.t:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int val$idPointerUp -> b
+    float val$xPointerUp -> c
+    float val$yPointerUp -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxGLSurfaceView$9 -> org.cocos2dx.lib.u:
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView this$0 -> a
+    int val$idUp -> b
+    float val$xUp -> c
+    float val$yUp -> d
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxHandler -> org.cocos2dx.lib.v:
+    java.lang.ref.WeakReference mActivity -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    void showDialog(android.os.Message) -> a
+    void showEditBoxDialog(android.os.Message) -> b
+org.cocos2dx.lib.Cocos2dxHandler$1 -> org.cocos2dx.lib.w:
+    org.cocos2dx.lib.Cocos2dxHandler this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.cocos2dx.lib.Cocos2dxHandler$DialogMessage -> org.cocos2dx.lib.x:
+    java.lang.String titile -> a
+    java.lang.String message -> b
+org.cocos2dx.lib.Cocos2dxHandler$EditBoxMessage -> org.cocos2dx.lib.y:
+    java.lang.String title -> a
+    java.lang.String content -> b
+    int inputMode -> c
+    int inputFlag -> d
+    int returnType -> e
+    int maxLength -> f
+org.cocos2dx.lib.Cocos2dxHelper -> org.cocos2dx.lib.Cocos2dxHelper:
+    org.cocos2dx.lib.Cocos2dxMusic sCocos2dMusic -> a
+    org.cocos2dx.lib.Cocos2dxSound sCocos2dSound -> b
+    android.content.res.AssetManager sAssetManager -> c
+    org.cocos2dx.lib.Cocos2dxAccelerometer sCocos2dxAccelerometer -> d
+    boolean sAccelerometerEnabled -> e
+    java.lang.String sPackageName -> f
+    java.lang.String sFileDirectory -> g
+    android.content.Context sContext -> h
+    org.cocos2dx.lib.Cocos2dxHelper$Cocos2dxHelperListener sCocos2dxHelperListener -> i
+    void init(android.content.Context,org.cocos2dx.lib.Cocos2dxHelper$Cocos2dxHelperListener) -> a
+    void nativeSetApkPath(java.lang.String) -> nativeSetApkPath
+    void nativeSetEditTextDialogResult(byte[]) -> nativeSetEditTextDialogResult
+    void onResume() -> a
+    void onPause() -> b
+    void setEditTextDialogResult(java.lang.String) -> a
+    void access$0(byte[]) -> a
+org.cocos2dx.lib.Cocos2dxHelper$1 -> org.cocos2dx.lib.z:
+    byte[] val$bytesUTF8 -> a
+    void run() -> run
+org.cocos2dx.lib.Cocos2dxHelper$Cocos2dxHelperListener -> org.cocos2dx.lib.aa:
+    void runOnGLThread(java.lang.Runnable) -> a
+org.cocos2dx.lib.Cocos2dxMusic -> org.cocos2dx.lib.ab:
+    java.lang.String TAG -> a
+    android.content.Context mContext -> b
+    android.media.MediaPlayer mBackgroundMediaPlayer -> c
+    float mLeftVolume -> d
+    float mRightVolume -> e
+    boolean mPaused -> f
+    java.lang.String mCurrentPath -> g
+    void initData() -> a
+org.cocos2dx.lib.Cocos2dxRenderer -> org.cocos2dx.lib.Cocos2dxRenderer:
+    long sAnimationInterval -> a
+    long mLastTickInNanoSeconds -> b
+    int mScreenWidth -> c
+    int mScreenHeight -> d
+    void setScreenWidthAndHeight(int,int) -> a
+    void onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig) -> onSurfaceCreated
+    void onSurfaceChanged(javax.microedition.khronos.opengles.GL10,int,int) -> onSurfaceChanged
+    void onDrawFrame(javax.microedition.khronos.opengles.GL10) -> onDrawFrame
+    void nativeTouchesBegin(int,float,float) -> nativeTouchesBegin
+    void nativeTouchesEnd(int,float,float) -> nativeTouchesEnd
+    void nativeTouchesMove(int[],float[],float[]) -> nativeTouchesMove
+    void nativeTouchesCancel(int[],float[],float[]) -> nativeTouchesCancel
+    boolean nativeKeyDown(int) -> nativeKeyDown
+    void nativeRender() -> nativeRender
+    void nativeInit(int,int) -> nativeInit
+    void nativeOnPause() -> nativeOnPause
+    void nativeOnResume() -> nativeOnResume
+    void handleActionDown(int,float,float) -> a
+    void handleActionUp(int,float,float) -> b
+    void handleActionCancel(int[],float[],float[]) -> a
+    void handleActionMove(int[],float[],float[]) -> b
+    void handleKeyDown(int) -> a
+    void handleOnPause() -> a
+    void handleOnResume() -> b
+    void nativeInsertText(java.lang.String) -> nativeInsertText
+    void nativeDeleteBackward() -> nativeDeleteBackward
+    java.lang.String nativeGetContentText() -> nativeGetContentText
+    void handleInsertText(java.lang.String) -> a
+    void handleDeleteBackward() -> c
+    java.lang.String getContentText() -> d
+org.cocos2dx.lib.Cocos2dxSound -> org.cocos2dx.lib.ac:
+    android.content.Context mContext -> a
+    android.media.SoundPool mSoundPool -> b
+    float mLeftVolume -> c
+    float mRightVolume -> d
+    java.util.HashMap mPathStreamIDsMap -> e
+    java.util.HashMap mPathSoundIDMap -> f
+    java.util.ArrayList mEffecToPlayWhenLoadedArray -> g
+    int mStreamIdSyn -> h
+    java.util.concurrent.Semaphore mSemaphore -> i
+    void initData() -> a
+    int doPlayEffect(java.lang.String,int,boolean) -> a
+    java.util.ArrayList access$0(org.cocos2dx.lib.Cocos2dxSound) -> a
+    int access$1(org.cocos2dx.lib.Cocos2dxSound,java.lang.String,int,boolean) -> a
+    void access$2(org.cocos2dx.lib.Cocos2dxSound,int) -> a
+    java.util.concurrent.Semaphore access$3(org.cocos2dx.lib.Cocos2dxSound) -> b
+org.cocos2dx.lib.Cocos2dxSound$OnLoadCompletedListener -> org.cocos2dx.lib.ad:
+    org.cocos2dx.lib.Cocos2dxSound this$0 -> a
+    void onLoadComplete(android.media.SoundPool,int,int) -> onLoadComplete
+org.cocos2dx.lib.Cocos2dxSound$SoundInfoForLoadedCompleted -> org.cocos2dx.lib.ae:
+    int soundID -> a
+    boolean isLoop -> b
+    java.lang.String path -> c
+org.cocos2dx.lib.Cocos2dxTextInputWraper -> org.cocos2dx.lib.af:
+    java.lang.String TAG -> a
+    org.cocos2dx.lib.Cocos2dxGLSurfaceView mCocos2dxGLSurfaceView -> b
+    java.lang.String mText -> c
+    java.lang.String mOriginText -> d
+    boolean isFullScreenEdit() -> a
+    void setOriginText(java.lang.String) -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent) -> onEditorAction
